@@ -36,6 +36,7 @@ setup_neovim() {
   && sudo apt-get install software-properties-common \
   && sudo apt-add-repository ppa:neovim-ppa/stable \
   && sudo apt-get update \
+  && sudo apt-get install vim \
   && sudo apt-get install neovim \
   && sudo apt-get install python-dev python-pip python3-dev python3-pip \
   && rm -rf ~/.config/nvim ~/.vim \
@@ -101,6 +102,7 @@ echo -n "This will delete all your previous nvim, tmux and zsh settings. Proceed
 read answer
 if echo "$answer" | grep -iq "^y" ;then
   echo "Installing dependencies..." \
+  && sudo apt-get update \
   && sudo apt-get install urlview xdotool dh-autoreconf dconf-cli \
   && install_on_my_zsh \
   && setup_tmux \
@@ -109,5 +111,6 @@ if echo "$answer" | grep -iq "^y" ;then
   && install_fonts \
   && install_ripgrep \
   && install_ctags \
-  && echo "Finished installation."
+  && echo "Finished installation." \
+  && sleep 1 && zsh
 fi
