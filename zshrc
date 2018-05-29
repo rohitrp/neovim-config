@@ -42,3 +42,4 @@ export PATH=/home/$USER/anaconda3/bin:$PATH
 
 #export {http,https,ftp}_proxy="http://netmon.iitb.ac.in:80/"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fpath=($fpath "/home/rp/.zfunctions")

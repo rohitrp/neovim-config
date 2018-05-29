@@ -17,10 +17,12 @@ install_on_my_zsh() {
 setup_tmux() {
   echo "Setting up tmux..." \
   && sudo apt-get install tmux \
-  && rm -rf ~/.tmux.conf ~/.tmux .tmux \
+  && rm -rf ~/.tmux.conf ~/.tmux \
+  && cd \
   && git clone https://github.com/gpakosz/.tmux.git \
   && ln -s -f .tmux/.tmux.conf \
-  && cp .tmux/.tmux.conf.local ~ 
+  && cp .tmux/.tmux.conf.local . \
+  && cd ~/neovim-config
 }
 
 install_fzf() {
