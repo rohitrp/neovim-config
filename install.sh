@@ -12,7 +12,8 @@ install_on_my_zsh() {
   && mkdir -p ~/.oh-my-zsh/custom/themes \
   && ln -s $(pwd)/cloud_kris.zsh-theme ~/.oh-my-zsh/custom/themes \
   && rm -f ~/z.sh \
-  && curl -fLo ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh
+  && curl -fLo ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh \
+  && printf "\n\n#initialize Z (https://github.com/rupa/z) \n. ~/z.sh \n\n" >> .zshrc
 }
 
 setup_tmux() {
