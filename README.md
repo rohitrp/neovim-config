@@ -1,21 +1,18 @@
 Neovim and terminal configuration
 ------
 
-This is my Neovim editor setup, with zsh and tmux configurations.
-Feel free to fork it
-and submit a pull request if you found any bug.
+This is a modified configurations of Neovim editor, zsh and tmux forked from [kristijanhusak/neovim-config](https://github.com/kristijanhusak/neovim-config).
+Feel free to fork it.
 
 **Warning**: Install script removes all previous configuration (zshrc, oh-my-zsh, nvim, tmux)
 
 Installation
 -----------
 
-    $ git clone https://github.com/kristijanhusak/neovim-config.git ~/neovim-config
+    $ git clone https://github.com/rohitrp/neovim-config.git ~/neovim-config
     $ cd ~/neovim-config
     $ chmod +x ./install.sh
     $ ./install.sh
-    $ nvim
-    $ :UpdateRemotePlugins
 
 Plugins
 ----------------

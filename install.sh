@@ -105,6 +105,7 @@ if echo "$answer" | grep -iq "^y" ;then
   echo "Installing dependencies..." \
   && sudo apt-get update \
   && sudo apt-get install urlview xdotool dh-autoreconf dconf-cli \
+  && sudo apt-get install fonts-powerline \
   && install_on_my_zsh \
   && setup_tmux \
   && setup_neovim \
