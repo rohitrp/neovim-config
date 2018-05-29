@@ -33,12 +33,12 @@ bindkey '^t' autosuggest-execute
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 [ -f ~/.zsh_secret ] && source ~/.zsh_secret
 
-export NVM_DIR="/home/rp/.nvm"
+export NVM_DIR="/home/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PATH=/home/rp/anaconda3/bin:$PATH
+export PATH=/home/$USER/anaconda3/bin:$PATH
 
-export {http,https,ftp}_proxy="http://netmon.iitb.ac.in:80/"
+#export {http,https,ftp}_proxy="http://netmon.iitb.ac.in:80/"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -44,7 +44,9 @@ setup_neovim() {
   && ln -s ~/.config/nvim ~/.vim \
   && pip install --user --upgrade PyYAML \
   && pip install virtualenv \
+  && sudo apt-get install python3-venv \
   && cd ~/.config/nvim \
+  && rm -rf ~/.cache/vim \
   && ./venv.sh \
   && make test \
   && make \
