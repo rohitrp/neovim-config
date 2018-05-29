@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="cloud_kris"
+ZSH_THEME="bira"
 
 plugins=(git zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting docker-compose z)
 

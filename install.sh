@@ -9,8 +9,6 @@ install_on_my_zsh() {
   && git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions \
   && git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search \
   && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting \
-  && mkdir -p ~/.oh-my-zsh/custom/themes \
-  && ln -s $(pwd)/cloud_kris.zsh-theme ~/.oh-my-zsh/custom/themes \
   && rm -f ~/z.sh \
   && curl -fLo ~/z.sh https://raw.githubusercontent.com/rupa/z/master/z.sh \
   && printf "\n\n#initialize Z (https://github.com/rupa/z) \n. ~/z.sh \n\n" >> .zshrc
@@ -113,6 +111,7 @@ if echo "$answer" | grep -iq "^y" ;then
   && install_fonts \
   && install_ripgrep \
   && install_ctags \
+  && npm install -g spaceship-prompt \
   && echo "Finished installation." \
   && sleep 1 && zsh
 fi
